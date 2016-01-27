@@ -23,7 +23,7 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
   source("run_analysis.R") 
   </code></pre>
   
-  1. Simple step to download, generate clean tidy data, store. 
+  1. Simple step to download, generate clean tidy data, store into wearableData.csv and wearableData.txt. 
   <pre><code>
   runWearableAnalysis()
   </code></pre>
