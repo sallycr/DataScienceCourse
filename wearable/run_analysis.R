@@ -110,12 +110,21 @@ downloadAndUnzipProjectData <- function(url =
 }
 
 runWearableAnalysis <- function() {
+    print("Start downloading files from remote.")
     dataPath <- downloadAndUnzipProjectData()
+    print(paste("Downloaded project data under dataPath :", dataPath))
+    
+    print("Start loading both of train and test data.")
     fullData <- loadTrainingAndTestData(dataPath)
+    print("Data is loaded in 'fullData'.")
+    
+    print("Start generating tidy data with 'fullData'.")
     cleanData <- selectMeanAndStdMeasurement(fullData)
     tidyDataOfSubjectAcitivity <- createTidyData(cleanData)
+    print("Tidy data is at var 'tidyDataOfSubjectAcitivity'.")
     
     write.csv(tidyDataOfSubjectAcitivity, file="wearableData.csv")
-    write.table(tidyDataOfSubjectAcitivity, row.name=FALSE, file="wearableData.txt")    
+    write.table(tidyDataOfSubjectAcitivity, row.name=FALSE, file="wearableData.txt")  
+    print("Stored tidy data into 'wearableData.csv' and 'wearableData.txt'.")
 }
 
