@@ -41,6 +41,6 @@ fbodygyrojerkmag
 The set of variables that were estimated from these signals are:
 
 <pre>
-_mean: Average mean value of each subject of each activity
-_std: Average standard deviation of each subject of each activity
+_mean: Average mean value
+_std: Average standard deviation
 </pre>
