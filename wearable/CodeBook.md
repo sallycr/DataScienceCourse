@@ -12,6 +12,7 @@ This feature information is mostly referred from feature_into.txt. You can find 
 These signals were used to estimate variables of the feature vector for each pattern:
 '_xyz' is used to denote 3-axial signals in the x, y and z directions.
 
+<pre>
 tbodyacc_xyz
 tgravityacc_xyz
 tbodyaccjerk_xyz
@@ -29,8 +30,11 @@ fbodyaccmag
 fbodyaccjerkmag
 fbodygyromag
 fbodygyrojerkmag
+</pre>
 
 The set of variables that were estimated from these signals are:
 
+<pre>
 _mean: Average mean value of each subject of each activity
 _std: Average standard deviation of each subject of each activity
+</pre>
