@@ -1,7 +1,7 @@
 # Prepare tidy data for wearable device
 
 This repository contains the files for generating tidy data for the data collected the accelerometers from the Samsung Galaxy S smartphone.
-Input data from the accelerometers from the Samsung Galaxy S smartphone. 
+Input data from the accelerometers from the Samsung Galaxy S smartphone. And output data is an average mean and standard deviation of measurements (refer Codebook.md for the description of each measurement) of each acitivity of subject. 
 
 A full description is available at the site where the data was obtained:
 
@@ -23,7 +23,7 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
   source("run_analysis.R") 
   </code></pre>
   
-  1. Simple step to download, generate clean tidy data, store into wearableData.csv and wearableData.txt. 
+  1. Simple step to download, generate clean tidy data(average mean and standard deviation of measurements for each acitivity of subject)  , store into wearableData.csv and wearableData.txt. 
   <pre><code>
   runWearableAnalysis()
   </code></pre>
